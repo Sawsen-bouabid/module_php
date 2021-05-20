@@ -51,6 +51,7 @@ echo "<h3>The last odd number is : $last_odd_number </h3>";
 ?>
 
 
+
 </body>
 <footer> <?php
     include 'footer.php';?> ; </footer>
