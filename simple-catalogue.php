@@ -33,8 +33,6 @@
 <h1> Tableau Produits</h1>
 
 
-
-
 <?php
 $products = ["Helicopter H7524", "Avion_Luxe A5247", "Avion_Standard S6542"];
 print_r($products);
