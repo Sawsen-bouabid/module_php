@@ -31,13 +31,13 @@
 
 <?php
  $Article = "Helicopter H7524 Rouge";
- $Price = "Prix =500 $ / jour";
+ $Price = "500 $ / jour";
  $image = "https://th.bing.com/th/id/OIP.lU5_uQumNiu5th9kSVIaRwHaE8?pid=ImgDet&rs=1";
 
 echo "<img src=\"".$image."\" alt=\"\" width=\"600\">";
 
-echo "<h2>$Article</h2>";
-echo "<h2>$Price</h2>";
+echo "<h2> $Article </h2>";
+echo "<h2>Le prix est : $Price</h2>";
   ?>
 
 </body>
