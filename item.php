@@ -21,10 +21,10 @@
     <link href="css\style.css" rel="stylesheet" />
     <title>Location location d'Avion Privé</title>
 </head>
-<html>
+
 <header>
     <?php
-  include 'header.php';?>
+  include  'header.php';?>
 </header>
 <body>
 <h1>Location Helicopter</h1>
