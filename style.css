@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: #a48e1f;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #a48e1f;
+}
+
+.dropdown-item {
+  color: #a48e1f;
+}
+
+form {
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-family: "Open Sans";
+  background-size: auto;
+}
+
+.btn-primary {
+  color: #a48e1f;
+  background-color: white;
+  border-color: #6f795c;
+}
+
+.btn-primary:hover {
+  color: #ffffff;
+  background-color: #a48e1f;
+  border-color: #5c6353;
+}
+
+#ft {
+  color: #a48e1f;
+  margin-top: 17%;
+  border-radius: 5px;
+  border-top: solid #f3f1e9;
+}
+
+/*.service,
+.ctc_link,
+.phone,
+.email {
+  text-decoration: none;
+  color: #a48e1f;
+}
+
+.cr {
+  font-size: 10px;
+}
+
+@media (min-width: 300px) {
+  .cr {
+    color: black;
+  }
+}
+
+.row > * {
+  padding-left: calc(var(--bs-gutter-x) / 1);
+}
+
+table {
+  margin-left: 40%;
+  margin-top: 80px;
+}
+
+
+@media (max-width: 400px) {
+  table {
+    margin-left: 10%;
+  }
+}
+
+*/
+.rfooter > * {
+  padding-left: calc(var(--bs-gutter-x) / 1);
+}
+
+
+footer {
+  text-decoration: none;
+  color: #a48e1f;
+}
+
+
+.text-muted {
+  text-decoration: none;
+  color: black;
+}
+
+
+/*@media (max-width: 400px) {
+  footer { 
+    gutter: ;
+
+  }
+} another day, another test*/
+
+

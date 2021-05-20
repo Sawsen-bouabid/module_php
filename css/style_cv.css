@@ -1,0 +1,91 @@
+
+ 
+  @import url(./bootstrap.min.css);
+ /*Code header menu*/
+  .navbar-light .navbar-nav .nav-link {
+    color: #a48e1f;
+}
+  
+.navbar-light .navbar-nav .nav-link.active 
+{
+    color: #a48e1f;
+}
+
+
+.photo {
+padding-top: 100px;
+
+}
+ /*Code de la photo */
+  .photo img{
+      width: 200px;
+      height: 200px;
+      border: 3px solid #A48E1F;
+      box-shadow: 0px 0px 10px #A48E1F;
+      border-radius: 100%;
+      margin: auto;
+      float: center;
+  }
+
+  .job{
+    font-family:'Arial', serif;
+    font-style: italic;
+    font-size:xx-large;
+    color: #A48E1F;
+    font-size: 1.3em;
+    text-align: center;
+  }
+
+
+
+  
+  
+
+
+ /* Fin code header */
+ .row{
+  display: flex;
+  flex-direction: row;
+
+ }
+
+h2 {
+
+  color: #A48E1F; 
+  text-align: left;
+}
+
+
+
+
+ /* code footer */
+
+  footer a { 
+    text-align: left;
+    color:#A48E1F;
+    text-decoration: none;
+  
+  }
+
+  footer .row {
+  display: inline;
+    text-decoration: #A48E1F solid;
+    justify-content: space-between;
+    font-size: 1.1em;
+    text-align: center;
+    padding: 25px;
+    border-radius: 5px;
+    border-top: solid   #A48E1F;
+  }
+
+
+
+
+
+
+
+
+
+
+/* Fin footer */
+

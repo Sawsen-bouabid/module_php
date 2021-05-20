@@ -1,0 +1,77 @@
+
+body{height: auto;}
+.photo{
+    width: 200px; height: 200px;
+        border-radius:100px; border: 2px solid#A48E1F
+}
+.pilotes{display: flex ;
+    justify-content: space-between;
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+video{padding-bottom: 100px;}
+footer a { 
+  text-align: left;
+  color:#A48E1F;
+  text-decoration: none;
+
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  text-justify: newspaper;
+  text-decoration: #A48E1F solid;
+  justify-content: space-between;
+
+  text-align: center;
+  padding: 10px;
+  margin: 50px auto 30px auto;
+  border-radius: 5px;
+  border-top: solid   #A48E1F;
+}
+
+.main-header .main-nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: right;
+  width: 70%;
+  margin: 5px auto;
+  font-size: 20px;
+  margin-right: 40%;
+  padding-left: 0%;
+}
+
+.main-header .main-nav ul li {
+  list-style: none;
+  padding: 0px 0;
+  height: 100px;
+}
+
+.main-header .main-nav ul li a {
+  color: #a48e1f;
+  text-decoration: none;
+}
+
+.logo {
+  margin-right: 400px;
+  align-self: flex-start;
+  width: 250px;
+
+  }
+.menu {
+  padding-left: 320px;
+}
+@media only screen and (max-width: 1024px)
+{
+.pilotes{background-image: url( avion\ tel1.jpg);
+
+  background-size: contain;
+  background-repeat: no-repeat; 
+  width: 1024px;
+    }
+          
+}
+           

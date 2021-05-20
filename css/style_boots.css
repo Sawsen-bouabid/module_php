@@ -1,0 +1,87 @@
+
+  @import url(./bootstrap.min.css);
+ /*Code header menu*/
+  .navbar-light .navbar-nav .nav-link {
+    color: #a48e1f;
+}
+  
+.navbar-light .navbar-nav .nav-link.active 
+{
+    color: #a48e1f;
+}
+
+body {
+
+ margin-left: 50px;
+}
+
+ /* Fin code header */
+
+ .btn-primary {
+    color: white;
+    background-color: #a48e1f;
+    border-color: #6f795c
+}
+
+.btn-primary:hover {
+    color: #ffffff;
+    background-color: #a48e1f;
+    border-color: #5c6353
+}
+ 
+.row .col-sm 
+{
+
+padding: 0px 0px 0px 0px;
+justify-content: space-between;
+
+}
+.avion_de_luxe{
+    justify-content: space-between;
+    
+}
+
+
+h2 {
+
+  color: #A48E1F; 
+  text-align: left;
+}
+
+h3 {
+
+    color: #A48E1F; 
+    text-align: center;
+    font-size: large;
+    text-align: left;
+  }
+
+
+
+ /* code footer */
+
+
+.rfooter > * {
+  padding-left: calc(var(--bs-gutter-x) / 1);
+}
+
+
+footer {
+  text-decoration: none;
+  color: #a48e1f;
+}
+
+
+.text-muted {
+  text-decoration: none;
+  color: black;
+}
+
+ 
+
+
+  
+
+
+/* Fin footer */
+

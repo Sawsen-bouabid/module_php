@@ -1,0 +1,74 @@
+@import url(./bootstrap.min.css);
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Raleway&family=Roboto&family=Roboto+Slab&display=swap");
+
+
+/*.col-sm {
+width: 636px ;
+}
+
+@media (min-width: 400px) {
+
+.col-sm {
+    margin-top: 20PX;
+
+}
+}*/
+
+/*nav {
+    color: #a48e1f
+    background-color: #fff;
+
+
+.nav-item .navbar-nav {
+    color: #a48e1f;
+}
+*/
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: #a48e1f;
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: #a48e1f;
+}
+
+.dropdown-item {
+    color: #a48e1f;
+}
+
+
+
+
+.btn-primary {
+        color: white;
+        background-color: #a48e1f;
+        border-color: #6f795c
+    }
+    
+    .btn-primary:hover {
+        color: #ffffff;
+        background-color: #030303;
+        border-color: #5c6353
+    }
+
+
+     .row>* {
+        padding-left: calc(var(--bs-gutter-x)/ 1);
+    }
+
+    .rfooter > * {
+        padding-left: calc(var(--bs-gutter-x) / 1);
+      }
+      
+      
+      footer {
+        text-decoration: none;
+        color: #a48e1f;
+      }
+      
+      
+      .text-muted {
+        text-decoration: none;
+        color: black;
+      }

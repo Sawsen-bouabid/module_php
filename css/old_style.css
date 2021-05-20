@@ -1,0 +1,225 @@
+@import url(./bootstrap.min.css);
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Raleway&family=Roboto&family=Roboto+Slab&display=swap");
+
+body {
+  margin: 0;
+  width: 100%;
+  min-width: 1370px;
+}
+
+/*a {
+  display: block;
+  width: 100%;
+}
+
+
+.main-nav {
+  min-width: 1370px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container_menu {
+  min-width: 1370px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-header .main-nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: right;
+  width: 90%;
+  font-size: 20px;
+  min-width: 1200px;
+}
+
+.main-header .main-nav ul li {
+  list-style: none;
+  padding: 0px 0;
+}
+
+.main-header .main-nav ul li a {
+  color: #a48e1f;
+  text-decoration: none;
+}
+
+.logo {
+  margin-right: 400px;
+  align-self: flex-start;
+  width: 250px;
+  height: 98px;
+}
+.menu {
+  padding-left: 320px;
+}*/
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: #a48e1f;
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: #a48e1f;
+}
+
+.dropdown-item {
+    color: #a48e1f;
+}
+
+
+
+.cont_avion {
+  min-width: 1350px;
+}
+
+.avion1 {
+  width: 100%;
+}
+
+/* {
+    display: flex;
+    flex-direction: row;
+    background-color: bisque;
+    color: black;
+}*/
+
+.form_search {
+  display: flex;
+  flex-direction: column;
+  min-width: 1350px;
+}
+
+#f_search {
+  display: flex;
+
+}
+
+button {
+  align-self: center;
+}
+
+.Titre1 {
+  align-self: center;
+  height: 280px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 61px;
+  color: #000000;
+  margin-top: 60px;
+}
+
+.titre_form {
+  align-self: center;
+  font-family: "Open Sans";
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+form {
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-family: "Open Sans";
+  width: 800px;
+  height: 100px;
+  position: relative;
+  left: 37%;
+}
+
+
+.about_lap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 1100px;
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 200px;
+}
+
+.lap {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-self: center;
+  width: 500px;
+  font-family: "Roboto";
+  font-size: 20px;
+  text-align: left;
+}
+
+.img_about {
+  align-self: center;
+}
+
+a {
+  color: #a48e1f;
+  text-decoration: none;
+}
+
+
+footer {
+  color: #A48E1F;
+  margin-top: 30%;
+  border-radius: 5px;
+  border-top: solid   #f3f1e9;
+}
+
+
+
+.service,
+.ctc_link,
+.phone,
+.email {
+  text-decoration: none;
+  color: #a48e1f;
+}
+
+.cr {
+  font-size: 10px;
+}
+
+.row>* {
+  padding-left: calc(var(--bs-gutter-x)/ 1);
+}
+
+
+/*@include media-breakpoint-up(sm) { 
+  .visually_hidden {
+    
+  }
+}*/
+
+/*
+.d_form {
+  display: flex
+}
+
+.box_form {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  color: white;
+  font-family: "Open Sans";
+  width: 700px;
+  height: 200px;
+  position: relative;
+  }
+
+.d_form {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  font-family: "Open Sans";
+  width: 700px;
+  height: 340px;
+  position: relative;
+  left: 37%;
+}*/

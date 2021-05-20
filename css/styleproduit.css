@@ -1,0 +1,41 @@
+.navbar-light .navbar-nav .nav-link.active {
+  color: #a48e1f;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #a48e1f;
+}
+
+.dropdown-item {
+  color: #a48e1f;
+}
+.interieur {
+  width: 350px;
+  height: 300px;
+  border: 2px solid #a48e1f;
+}
+
+h1 {
+  margin: 20px;
+  color: #a48e1f;
+}
+
+footer {
+  color: #A48E1F;
+  margin-top: 30%;
+  border-radius: 5px;
+  border-top: solid   #f3f1e9;
+}
+
+
+.container{
+  margin-top: 50px;
+}
+
+.service,
+.ctc_link,
+.phone,
+.email {
+  text-decoration: none;
+  color: #a48e1f;
+}
