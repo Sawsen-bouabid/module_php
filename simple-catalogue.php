@@ -25,7 +25,6 @@ echo "<h3>The last odd number is : $last_odd_number </h3>";
 
 ?>
 
-<h1> Etape 2 </h1>
 
    </body>
 
