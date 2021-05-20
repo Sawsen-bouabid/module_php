@@ -27,6 +27,8 @@
     include  'header.php';?>
 </header>
 
+
+
 <body>
 <h1> Tableau Produits</h1>
 
