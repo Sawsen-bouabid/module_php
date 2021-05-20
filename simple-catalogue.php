@@ -39,6 +39,7 @@ print_r($products);
 $first_odd_number = $products[0];
 $last_odd_number = $products[2];
 
+
 ?>
 
 <?php
