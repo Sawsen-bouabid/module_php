@@ -1,10 +1,9 @@
-<?php $Article = "helicopter"; ?>
-<?php $Price = "400 $ / day"; ?>
-<?php
+<?php $Article = "helicopter";
+ $Price = "400 $ / day";
 header ("Content-type: image/jpeg");
-$image = /Drive partagés/Tech Dev WebApp Étudiants 2022/Modules/Git/Rendus/Ilot4/images/aboutlap.jpg; ?>
-  <img src=« /Drive partagés/Tech Dev WebApp Étudiants 2022/Modules/Git/Rendus/Ilot4/images/aboutlap.jpg » />
+$image = "https://th.bing.com/th/id/OIP.lU5_uQumNiu5th9kSVIaRwHaE8?pid=ImgDet&rs=1";
 
-<?php echo '<imag scr =$image ; ?>'!
+
+echo $Article.$Price.'<imag scr ="'.$image.'" ; ?>';
 
 
