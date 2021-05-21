@@ -24,7 +24,7 @@
 
 <header>
     <?php
-  include  'header.php';?>
+  include 'header.php';?>
 </header>
 <body>
 <h1>Location Helicopter</h1>
