@@ -40,12 +40,19 @@ var_dump($products);?>
 <h3>  Affichage éléments (boucles) </h3>
 
 
-<?php
-for($products as $name) {
-    echo "<p>le nom du produit: $name <br> </p>";
 
-}
+<?php
+    $i = 1;
+    $affiche_produit = $products[$i];
+    do  {
+        ?>
+        <p> Ceci est le produit n° <?php echo $i ?> et son nom est <?php echo $affiche_produit ?> <p>
+         <?php
+        $i++;
+     }
+    while ($i<count($products));
 ?>
+
 
 <?php
 echo "<h2>Tri par ordre alphabétique</h2>";
