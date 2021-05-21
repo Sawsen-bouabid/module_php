@@ -32,14 +32,19 @@
 <body>
 <h1> Tableau Produits</h1>
 
+<h3> Création Tableau </h3>
 
 <?php
 $products = ["Helicopter H7524", "Avion_Luxe A5247", "Avion_Standard S6542"];
-print_r($products);
-$first_odd_number = $products[0];
-$last_odd_number = $products[2];
+var_dump($products);?>
+<h3>  Affichage éléments (boucles) </h3>
 
 
+<?php
+for($products as $name) {
+    echo "<p>le nom du produit: $name <br> </p>";
+
+}
 ?>
 
 <?php
@@ -47,8 +52,8 @@ echo "<h2>Tri par ordre alphabétique</h2>";
 sort($products);
 print_r($products);
 
-echo "<h3>The first odd number is :  $first_odd_number</h3>";
-echo "<h3>The last odd number is : $last_odd_number </h3>";
+echo "<p> Le premier produit  est :  $products[0] </br> </p>";
+echo "<p>Le dernier produit  est :  $products[2]  </br> </p>";
 
 ?>
 
