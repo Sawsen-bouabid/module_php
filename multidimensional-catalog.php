@@ -1,14 +1,11 @@
-
-
-
 <html lang="fr">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <meta
             name="description"
             content="Le meilleur service de location d'avions privés en France. Confort, sécurité et commodité."
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
     <!-- CSS only -->
     <link
@@ -20,15 +17,14 @@
 
     <!--<link href="css\style.css" rel="stylesheet" /> -->
     <title>Location d'Avion Privé</title>
-    <link href="css\style.css" rel="stylesheet" />
+    <link href="css\style.css" rel="stylesheet"/>
     <title>Location location d'Avion Privé</title>
 </head>
 
 <header>
     <?php
-    include 'header.php';?>
+    include 'header.php'; ?>
 </header>
-
 
 
 <body>
@@ -53,7 +49,6 @@ $products = [
     ],
 
 
-
     "product_3" => [
         "Name" => "Avion_Standard ",
         "Model" => "S6542 Blanc",
@@ -66,60 +61,59 @@ $products = [
 <table>
     <tr>
         <td> <?php
-            echo "<img src=\"".$products['product_1']['Picture']."\"alt=\"\" width=\"400\">";
+            echo "<img src=\"" . $products['product_1']['Picture'] . "\"alt=\"\" width=\"400\">";
             ?></td>
 
         <td> <?php
-            echo "<img src=\"".$products['product_2']['Picture']."\"alt=\"\" width=\"400\">";
+            echo "<img src=\"" . $products['product_2']['Picture'] . "\"alt=\"\" width=\"400\">";
             ?></td>
         <td> <?php
-            echo "<img src=\"".$products['product_3']['Picture']."\"alt=\"\" width=\"400\">";
+            echo "<img src=\"" . $products['product_3']['Picture'] . "\"alt=\"\" width=\"400\">";
             ?></td>
 
+    </tr>
+    <tr>
+        <td> <?php
+            print_r($products['product_1']['Name']); ?></td>
+
+        <td> <?php
+            print_r($products['product_2']['Name']); ?> </td>
+        <td>
+            <?php
+            print_r($products['product_3']['Name']); ?> </td>
 
     </tr>
     <tr>
         <td> <?php
-            print_r($products['product_1']['Name']);  ?></td>
+            print_r($products['product_1']['Model']); ?></td>
 
         <td> <?php
-            print_r($products['product_2']['Name']);  ?> </td>
+            print_r($products['product_2']['Model']); ?> </td>
         <td>
             <?php
-            print_r($products['product_3']['Name']);  ?> </td>
+            print_r($products['product_3']['Model']); ?> </td>
 
     </tr>
     <tr>
         <td> <?php
-            print_r($products['product_1']['Model']);  ?></td>
+            print_r($products['product_1']['Price']); ?></td>
 
         <td> <?php
-            print_r($products['product_2']['Model']);  ?> </td>
+            print_r($products['product_2']['Price']); ?> </td>
         <td>
             <?php
-            print_r($products['product_3']['Model']);  ?> </td>
+            print_r($products['product_3']['Price']); ?> </td>
 
     </tr>
     <tr>
         <td> <?php
-            print_r($products['product_1']['Price']);  ?></td>
+            print_r($products['product_1']['Discount']); ?></td>
 
         <td> <?php
-            print_r($products['product_2']['Price']);  ?> </td>
+            print_r($products['product_2']['Discount']); ?> </td>
         <td>
             <?php
-            print_r($products['product_3']['Price']);  ?> </td>
-
-    </tr>
-    <tr>
-        <td> <?php
-            print_r($products['product_1']['Discount']);  ?></td>
-
-        <td> <?php
-            print_r($products['product_2']['Discount']);  ?> </td>
-        <td>
-            <?php
-            print_r($products['product_3']['Discount']);  ?> </td>
+            print_r($products['product_3']['Discount']); ?> </td>
 
     </tr>
 </table>
@@ -127,7 +121,8 @@ $products = [
 
 </body>
 <footer> <?php
-    include 'footer.php';?> ; </footer>
+    include 'footer.php'; ?> ;
+</footer>
 <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
