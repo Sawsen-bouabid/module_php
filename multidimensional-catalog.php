@@ -66,14 +66,14 @@ $products = [
 <table>
     <tr>
         <td> <?php
-            echo "<img src=\"".$products['product_1']['Picture']."\"alt=\"\" width=\"600\">";
+            echo "<img src=\"".$products['product_1']['Picture']."\"alt=\"\" width=\"400\">";
             ?></td>
 
         <td> <?php
-            echo "<img src=\"".$products['product_2']['Picture']."\"alt=\"\" width=\"600\">";
+            echo "<img src=\"".$products['product_2']['Picture']."\"alt=\"\" width=\"400\">";
             ?></td>
         <td> <?php
-            echo "<img src=\"".$products['product_3']['Picture']."\"alt=\"\" width=\"600\">";
+            echo "<img src=\"".$products['product_3']['Picture']."\"alt=\"\" width=\"400\">";
             ?></td>
 
 
