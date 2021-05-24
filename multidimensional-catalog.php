@@ -148,6 +148,10 @@ for($i=0; $i<count($products);$i++){
 }
 ?>
 <h3> boucle while </h3>
+
+
+<h5> boucle while méthode 1 </h5>
+
 <?php
 $i=0;
 while($i < count($products))
@@ -160,6 +164,46 @@ while($i < count($products))
     echo '<br><br>';
 
 }
+?>
+
+
+
+<h5> boucle while méthode 2 </h5>
+<?php
+$index = 0;
+
+while ($index < count($products)) {
+
+    $array_index = array_keys($products);
+    $print = $array_index[$index];
+
+    echo "Product : " . $print . "<br/>";
+
+    $index ++;
+
+    $index2 = 0;
+
+    while ($index2 < count($products[$print])) {
+
+
+        $array_index2 = array_values($products[$print]);
+        $print2 = $array_index2[$index2];
+
+        echo  $print2 . "<br/>";
+
+
+        $index2 ++;
+    } echo '<br><br>';
+}
+
+
+
+
+
+
+
+
+
 
 ?>
 
