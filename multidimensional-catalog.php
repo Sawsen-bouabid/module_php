@@ -1,6 +1,3 @@
-
-
-
 <html lang="fr">
 <head>
     <meta charset="utf-8" />
@@ -76,44 +73,43 @@ $products = [
             echo "<img src=\"".$products['product_3']['Picture']."\"alt=\"\" width=\"600\">";
             ?></td>
 
-
     </tr>
     <tr>
         <td> <?php
-            print_r($products['product_1']['Name']);  ?></td>
+            print_r($products['produit_1']['Name']); ?></td>
 
         <td> <?php
-            print_r($products['product_2']['Name']);  ?> </td>
+            print_r($products['produit_2']['Name']); ?> </td>
         <td>
             <?php
-            print_r($products['product_3']['Name']);  ?> </td>
+            print_r($products['produit_3']['Name']); ?> </td>
 
     </tr>
     <tr>
         <td> <?php
-            print_r($products['product_1']['Model']);  ?></td>
+            print_r($products['produit_1']['Model']); ?></td>
 
         <td> <?php
-            print_r($products['product_2']['Model']);  ?> </td>
+            print_r($products['produit_2']['Model']); ?> </td>
         <td>
             <?php
-            print_r($products['product_3']['Model']);  ?> </td>
+            print_r($products['produit_3']['Model']); ?> </td>
 
     </tr>
     <tr>
         <td> <?php
-            print_r($products['product_1']['Price']);  ?></td>
+            print_r($products['produit_1']['Price']); ?></td>
 
         <td> <?php
-            print_r($products['product_2']['Price']);  ?> </td>
+            print_r($products['produit_2']['Price']); ?> </td>
         <td>
             <?php
-            print_r($products['product_3']['Price']);  ?> </td>
+            print_r($products['produit_3']['Price']); ?> </td>
 
     </tr>
     <tr>
         <td> <?php
-            print_r($products['product_1']['Discount']);  ?></td>
+            print_r($products['produit_1']['Discount']); ?></td>
 
         <td> <?php
             print_r($products['product_2']['Discount']);  ?> </td>
@@ -124,6 +120,94 @@ $products = [
     </tr>
 </table>
 
+<h3> boucle Foreach </h3>
+        <li> <?php
+        
+foreach ($products as $product => $caracteristiques){
+    echo ' Produit ' .($product ). ' :<br>';  
+      
+         foreach($caracteristiques as $caracteristique => $details ){
+       
+       echo $caracteristique. ' : ' .$details. '<br>';
+    
+         }
+   
+       echo '<br><br>';
+
+   
+   }
+   ?></li>
+<h3> boucle For </h3>
+
+<?php
+$keys=array_keys($products);
+for($i=0; $i<count($products);$i++){
+    echo $keys[$i]. "<br/>";
+    foreach($products[$keys[$i]] as $key => $value){
+        echo $key .":" . $value."<br/>";
+    }     echo '<br><br>';
+
+}
+?>
+<h3> boucle while </h3>
+
+
+<h5> boucle while méthode 1 </h5>
+
+<?php
+$i=0;
+while($i < count($products))
+{
+
+    echo $keys[$i]. "<br/>";
+    foreach($products[$keys[$i]] as $key => $value){
+        echo $key .":" . $value."<br/>";
+    } $i++;
+    echo '<br><br>';
+
+}
+?>
+
+
+
+<h5> boucle while méthode 2 </h5>
+<?php
+$index = 0;
+
+while ($index < count($products)) {
+
+    $array_index = array_keys($products);
+    $print = $array_index[$index];
+
+    echo "Product : " . $print . "<br/>";
+
+    $index ++;
+
+    $index2 = 0;
+
+    while ($index2 < count($products[$print])) {
+
+
+        $array_index2 = array_values($products[$print]);
+        $print2 = $array_index2[$index2];
+
+        echo  $print2 . "<br/>";
+
+
+        $index2 ++;
+    } echo '<br><br>';
+}
+
+
+
+
+
+
+
+
+
+
+?>
 
 </body>
 <footer> <?php

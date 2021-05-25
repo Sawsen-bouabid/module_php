@@ -24,31 +24,89 @@
 
 <header>
     <?php
-    include  'header.php';?>
+    include 'header.php';?>
 </header>
 
 
 
-<body>
-<h1> Tableau Produits</h1>
 
+<body>
+
+<h3> Création Tableau </h3>
 
 <?php
 $products = ["Helicopter H7524", "Avion_Luxe A5247", "Avion_Standard S6542"];
-print_r($products);
-$first_odd_number = $products[0];
-$last_odd_number = $products[2];
+var_dump($products);?>
 
-
-?>
 
 <?php
 echo "<h2>Tri par ordre alphabétique</h2>";
 sort($products);
-print_r($products);
+var_dump($products);
 
-echo "<h3>The first odd number is :  $first_odd_number</h3>";
-echo "<h3>The last odd number is : $last_odd_number </h3>";
+echo "<p> Le premier produit  est :  $products[0] </br> </p>";
+echo "<p>Le dernier produit  est :  $products[2]  </br> </p>";
+
+?>
+
+
+
+<h3>  Affichage éléments (boucles) </h3>
+
+<h4> Affichage des produits avec la boucle Do While :</h4>
+
+
+<?php
+    $i = 0;
+   
+    do  {
+        ?>
+        <p> Ce produit est  <?php echo $products[$i] ?> <p>
+         <?php
+        $i++; 
+     }
+    while ($i<count($products));
+?>
+
+
+<h4> Affichage des produits avc la boucle While :</h4>
+
+<?php 
+
+$i =0;
+
+while ($i < count($products) ) {
+    $product = $products[$i];
+    $i += 1;
+
+    echo "Le produit : " . $product . "<br/>";
+}
+
+?>
+
+
+<h3> Affichage des produits avec la boucle For :</h3>
+
+<?php 
+
+$i =0;
+
+for($i; $i<count($products); $i++) {
+
+    $product = $products[$i];
+
+    echo " Le produit   : " . $product . "<br/>";
+}
+
+?>
+
+<h3> Affichage des produits avec la boucle Foreach :</h3>
+
+<?php 
+
+foreach($products as $value) {
+    echo "Le produit : " . $value . "<br/>";
+}
 
 ?>
 
