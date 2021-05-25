@@ -28,49 +28,49 @@
 
 
 
-<body>
+<>
 <h2> Catalogue Produits</h2>
 
 
 <?php
 $products = [
-    "product_1" => [
+    "produit_1" => [
         "Name" => "Helicopter ",
         "Model" => "H7524 Rouge",
         "Price" => "500$/day",
         "Discount" => "Discount 20%",
-        "Picture" => "https://th.bing.com/th/id/OIP.lU5_uQumNiu5th9kSVIaRwHaE8?pid=ImgDet&rs=1",
+        "Picture" => "hélécopter1.jpg",
     ],
-    "product_2" => [
+    "produit_2" => [
         "Name" => "Avion_luxe ",
         "Model" => "A5247 Or",
         "Price" => "1200$/day",
         "Discount" => "Discount 20%",
-        "Picture" => "https://i.pinimg.com/originals/8d/56/71/8d56715bfb19e9c07ee0cd25ebc5aa36.jpg",
+        "Picture" => "Avion_de_luxe_2.jpg",
     ],
 
 
 
-    "product_3" => [
+    "produit_3" => [
         "Name" => "Avion_Standard ",
         "Model" => "S6542 Blanc",
         "Price" => "1000$/day",
         "Discount" => "Discount 20%",
-        "Picture" => "https://th.bing.com/th/id/Re9cf8e1b8f6aa0174cc00c0a37c10afb?rik=mybImVADQBWIQQ&pid=ImgRaw",
+        "Picture" => "Avion-standard_4.jpg",
     ],
 
 ]; ?>
 <table>
     <tr>
         <td> <?php
-            echo "<img src=\"".$products['product_1']['Picture']."\"alt=\"\" width=\"600\">";
+            echo "<img src=\"".$products['produit_1']['Picture']."\"alt=\"\" width=\"600\">";
             ?></td>
 
         <td> <?php
-            echo "<img src=\"".$products['product_2']['Picture']."\"alt=\"\" width=\"600\">";
+            echo "<img src=\"".$products['produit_2']['Picture']."\"alt=\"\" width=\"600\">";
             ?></td>
         <td> <?php
-            echo "<img src=\"".$products['product_3']['Picture']."\"alt=\"\" width=\"600\">";
+            echo "<img src=\"".$products['produit_3']['Picture']."\"alt=\"\" width=\"600\">";
             ?></td>
 
     </tr>
@@ -112,22 +112,23 @@ $products = [
             print_r($products['produit_1']['Discount']); ?></td>
 
         <td> <?php
-            print_r($products['product_2']['Discount']);  ?> </td>
+            print_r($products['produit_2']['Discount']);  ?> </td>
         <td>
             <?php
-            print_r($products['product_3']['Discount']);  ?> </td>
+            print_r($products['produit_3']['Discount']);  ?> </td>
 
     </tr>
 </table>
 
 <h3> boucle Foreach </h3>
-        <li> <?php
+
+            <?php
         
 foreach ($products as $product => $caracteristiques){
-    echo ' Produit ' .($product ). ' :<br>';  
-      
+
+                echo ' Produit ' .($product ). ' :<br>';
          foreach($caracteristiques as $caracteristique => $details ){
-       
+
        echo $caracteristique. ' : ' .$details. '<br>';
     
          }
@@ -136,78 +137,74 @@ foreach ($products as $product => $caracteristiques){
 
    
    }
-   ?></li>
-<h3> boucle For </h3>
+          ?>
+<ul> <h3> boucle For </h3>
 
 <?php
 $keys=array_keys($products);
 for($i=0; $i<count($products);$i++){
-    echo $keys[$i]. "<br/>";
-    foreach($products[$keys[$i]] as $key => $value){
-        echo $key .":" . $value."<br/>";
-    }     echo '<br><br>';
 
-}
-?>
-<h3> boucle while </h3>
-
-
-<h5> boucle while méthode 1 </h5>
-
+    echo "<img src=\"" . $products[$keys[$i]]["Picture"] . "\"alt=\"\" width=\"600\">";
+    echo '<br><br>';
+    echo $keys[$i]. "<br/>";?>
+     <li> <?php echo $products[$keys[$i]]["Name"] ."<br/>" ; ?></li>
+    <li> <?php  echo $products[$keys[$i]]["Model"] . "<br/>";?></li>
+   <li> <?php  echo $products[$keys[$i]]["Price"] . "<br/>";?></li>
+  <li> <?php   echo $products[$keys[$i]]["Discount"] . "<br/>";?></li>
 <?php
-$i=0;
-while($i < count($products))
-{
-
-    echo $keys[$i]. "<br/>";
-    foreach($products[$keys[$i]] as $key => $value){
-        echo $key .":" . $value."<br/>";
-    } $i++;
     echo '<br><br>';
 
 }
 ?>
+</ul>
 
 
+<h5> boucle while  </h5>
 
-<h5> boucle while méthode 2 </h5>
+    <?php
+    $index=0;
+    $keys=array_keys($products);
+    while($index < count($products))
+    {
+        echo "<img src=\"" . $products[$keys[$index]]["Picture"] . "\"alt=\"\" width=\"600\">";
+        echo '<br><br>';
+        echo $keys[$index]. "<br/>";
+
+     echo $products[$keys[$index]]["Name"] ."<br/>" ;
+     echo $products[$keys[$index]]["Model"] . "<br/>";
+     echo $products[$keys[$index]]["Price"] . "<br/>";
+     echo $products[$keys[$index]]["Discount"] . "<br/>";
+        $index++;
+    echo '<br><br>';
+
+} ?>
+
+
+<h5> boucle do while  </h5>
+
 <?php
-$index = 0;
+$index=0;
+do  {   echo "<img src=\"" . $products[$keys[$index]]["Picture"] . "\"alt=\"\" width=\"600\">";
+    echo '<br><br>';
+    echo $keys[$index]. "<br/>";
 
-while ($index < count($products)) {
-
-    $array_index = array_keys($products);
-    $print = $array_index[$index];
-
-    echo "Product : " . $print . "<br/>";
-
-    $index ++;
-
-    $index2 = 0;
-
-    while ($index2 < count($products[$print])) {
-
-
-        $array_index2 = array_values($products[$print]);
-        $print2 = $array_index2[$index2];
-
-        echo  $print2 . "<br/>";
-
-
-        $index2 ++;
-    } echo '<br><br>';
-}
-
-
-
-
-
-
-
-
+    echo $products[$keys[$index]]["Name"] ."<br/>" ;
+    echo $products[$keys[$index]]["Model"] . "<br/>";
+    echo $products[$keys[$index]]["Price"] . "<br/>";
+    echo $products[$keys[$index]]["Discount"] . "<br/>";
+    $index++;
+    echo '<br><br>';}
+    while($index < count($products));
 
 
 ?>
+
+
+
+
+
+
+
 
 </body>
 <footer> <?php

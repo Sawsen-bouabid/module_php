@@ -50,8 +50,20 @@ echo "<p>Le dernier produit  est :  $products[2]  </br> </p>";
 ?>
 
 
+<h4> Affichage des produits avec la boucle While :</h4>
 
-<h3>  Affichage éléments (boucles) </h3>
+<?php
+
+$i =0;
+
+while ($i < count($products) ) {
+
+    echo "Le produit : " . $products[$i] . "<br/>";
+    $i ++;
+}
+
+?>
+
 
 <h4> Affichage des produits avec la boucle Do While :</h4>
 
@@ -60,42 +72,26 @@ echo "<p>Le dernier produit  est :  $products[2]  </br> </p>";
     $i = 0;
    
     do  {
-        ?>
-        <p> Ce produit est  <?php echo $products[$i] ?> <p>
-         <?php
+        echo "Le produit : " . $products[$i] . "<br/>";
+
         $i++; 
      }
     while ($i<count($products));
 ?>
 
 
-<h4> Affichage des produits avc la boucle While :</h4>
-
-<?php 
-
-$i =0;
-
-while ($i < count($products) ) {
-    $product = $products[$i];
-    $i += 1;
-
-    echo "Le produit : " . $product . "<br/>";
-}
-
-?>
 
 
 <h3> Affichage des produits avec la boucle For :</h3>
 
 <?php 
 
-$i =0;
 
-for($i; $i<count($products); $i++) {
 
-    $product = $products[$i];
+for($i=0; $i<count($products); $i++) {
 
-    echo " Le produit   : " . $product . "<br/>";
+
+    echo " Le produit   : " . $products[$i] . "<br/>";
 }
 
 ?>
