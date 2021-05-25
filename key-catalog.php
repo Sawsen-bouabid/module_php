@@ -5,19 +5,24 @@
 
 </header>
 <body>
+<?php
+include  'my-fonctions.php';?>
+
 <h1> Tableau Produits</h1>
 
 <?php
 $product_1 = [
     "Name" => "Helicopter ",
-    "Model" => "H7524 Rouge",
-    "Price" => "500$/day",
+    "Model" => "H7524 ",
+    "Price" => "50000",
     "Discount" => "20%",
-    "Picture" => "https://th.bing.com/th/id/OIP.lU5_uQumNiu5th9kSVIaRwHaE8?pid=ImgDet&rs=1",
+    "Picture" => "hélécopter1.jpg",
 ];
 
-print_r($product_1);
+var_dump($product_1);
+echo '<br><br>';
 
+echo "Le produit formaté est : " .formatPrice($product_1["Price"]). "euro";
 
 
 ?>
