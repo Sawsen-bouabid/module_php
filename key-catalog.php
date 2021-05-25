@@ -22,7 +22,7 @@ $product_1 = [
 var_dump($product_1);
 echo '<br><br>';
 
-echo "Le produit formaté est : " .formatPrice($product_1["Price"]). "euro";
+formatPrice($product_1["Price"]);
 
 
 ?>

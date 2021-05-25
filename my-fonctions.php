@@ -1,7 +1,7 @@
 <?php
 
 function formatPrice($price_centime) {
-    return $price_format= $price_centime/100;
-    echo'Le prix en euro est ' . $price_format . ' !<br />';
+     $price_format= $price_centime/100;
+    echo' Prix en euro : ' . $price_format . '<br />';
 
 }

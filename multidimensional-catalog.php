@@ -28,7 +28,9 @@
 
 
 
-<>
+<body>
+<?php
+include  'my-fonctions.php';?>
 <h2> Catalogue Produits</h2>
 
 
@@ -37,14 +39,14 @@ $products = [
     "produit_1" => [
         "Name" => "Helicopter ",
         "Model" => "H7524 Rouge",
-        "Price" => "500$/day",
+        "Price" => "50000",
         "Discount" => "Discount 20%",
         "Picture" => "hélécopter1.jpg",
     ],
     "produit_2" => [
         "Name" => "Avion_luxe ",
         "Model" => "A5247 Or",
-        "Price" => "1200$/day",
+        "Price" => "120000",
         "Discount" => "Discount 20%",
         "Picture" => "Avion_de_luxe_2.jpg",
     ],
@@ -54,7 +56,7 @@ $products = [
     "produit_3" => [
         "Name" => "Avion_Standard ",
         "Model" => "S6542 Blanc",
-        "Price" => "1000$/day",
+        "Price" => "100000",
         "Discount" => "Discount 20%",
         "Picture" => "Avion-standard_4.jpg",
     ],
@@ -98,14 +100,13 @@ $products = [
     </tr>
     <tr>
         <td> <?php
-            print_r($products['produit_1']['Price']); ?></td>
+            formatPrice($products['produit_1']['Price']); ?> </td>
 
         <td> <?php
-            print_r($products['produit_2']['Price']); ?> </td>
+           formatPrice($products['produit_2']['Price']); ?> </td>
         <td>
             <?php
-            print_r($products['produit_3']['Price']); ?> </td>
-
+            formatPrice($products['produit_3']['Price']); ?> </td>
     </tr>
     <tr>
         <td> <?php
@@ -149,7 +150,7 @@ for($i=0; $i<count($products);$i++){
     echo $keys[$i]. "<br/>";?>
      <li> <?php echo $products[$keys[$i]]["Name"] ."<br/>" ; ?></li>
     <li> <?php  echo $products[$keys[$i]]["Model"] . "<br/>";?></li>
-   <li> <?php  echo $products[$keys[$i]]["Price"] . "<br/>";?></li>
+   <li> <?php  formatPrice($products[$keys[$i]]["Price"]) . "<br/>";?></li>
   <li> <?php   echo $products[$keys[$i]]["Discount"] . "<br/>";?></li>
 <?php
     echo '<br><br>';
@@ -157,24 +158,44 @@ for($i=0; $i<count($products);$i++){
 }
 ?>
 </ul>
+<h3> boucle while </h3>
+
+
+<ul><h5> boucle while  </h5>
+
+<?php
+$i=0;
+while($i < count($products))
+{
+
+    echo $keys[$i]. "<br/>";
+    foreach($products[$keys[$i]] as $key => $value){?>
+<li> <?php echo $key .":" . $value."<br/>";?> </li>
+   <?php } $i++;
+    echo '<br><br>';
+
+}
+?>
+</ul>
+
 
 
 <h5> boucle while  </h5>
 
-    <?php
-    $index=0;
-    $keys=array_keys($products);
-    while($index < count($products))
-    {
-        echo "<img src=\"" . $products[$keys[$index]]["Picture"] . "\"alt=\"\" width=\"600\">";
-        echo '<br><br>';
-        echo $keys[$index]. "<br/>";
+<?php
+$index=0;
+$keys=array_keys($products);
+while($index < count($products))
+{
+    echo "<img src=\"" . $products[$keys[$index]]["Picture"] . "\"alt=\"\" width=\"600\">";
+    echo '<br><br>';
+    echo $keys[$index]. "<br/>";
 
-     echo $products[$keys[$index]]["Name"] ."<br/>" ;
-     echo $products[$keys[$index]]["Model"] . "<br/>";
-     echo $products[$keys[$index]]["Price"] . "<br/>";
-     echo $products[$keys[$index]]["Discount"] . "<br/>";
-        $index++;
+    echo $products[$keys[$index]]["Name"] ."<br/>" ;
+    echo $products[$keys[$index]]["Model"] . "<br/>";
+    formatPrice($products[$keys[$index]]["Price"]) . "<br/>";
+    echo $products[$keys[$index]]["Discount"] . "<br/>";
+    $index++;
     echo '<br><br>';
 
 } ?>
@@ -190,22 +211,21 @@ do  {   echo "<img src=\"" . $products[$keys[$index]]["Picture"] . "\"alt=\"\" w
 
     echo $products[$keys[$index]]["Name"] ."<br/>" ;
     echo $products[$keys[$index]]["Model"] . "<br/>";
-    echo $products[$keys[$index]]["Price"] . "<br/>";
+   formatPrice($products[$keys[$index]]["Price"] ). "<br/>";
     echo $products[$keys[$index]]["Discount"] . "<br/>";
     $index++;
     echo '<br><br>';}
-    while($index < count($products));
+while($index < count($products));
 
 
 ?>
+<h3> Etape 5 : favoriser son code avec des fonctions</h3>
+<?php
 
 
 
 
-
-
-
-
+?>
 </body>
 <footer> <?php
     include 'footer.php';?> ; </footer>
