@@ -31,6 +31,9 @@
 
 
 <body>
+<?php
+include 'my-fonctions.php';?>
+
 
 <h3> Création Tableau </h3>
 
