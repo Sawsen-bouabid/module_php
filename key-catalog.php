@@ -14,7 +14,7 @@ include  'my-fonctions.php';?>
 $product_1 = [
     "Name" => "Helicopter ",
     "Model" => "H7524 ",
-    "Price" => "50000",
+    "Price" => "60000",
     "Discount" => "20%",
     "Picture" => "hélécopter1.jpg",
 ];

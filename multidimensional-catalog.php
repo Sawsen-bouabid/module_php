@@ -39,15 +39,15 @@ $products = [
     "produit_1" => [
         "Name" => "Helicopter ",
         "Model" => "H7524 Rouge",
-        "Price" => "50000",
-        "Discount" => "Discount 20%",
+        "Price" => "60000",
+        "Discount" => "20",
         "Picture" => "hélécopter1.jpg",
     ],
     "produit_2" => [
         "Name" => "Avion_luxe ",
         "Model" => "A5247 Or",
-        "Price" => "120000",
-        "Discount" => "Discount 20%",
+        "Price" => "180000",
+        "Discount" => " 20",
         "Picture" => "Avion_de_luxe_2.jpg",
     ],
 
@@ -56,8 +56,8 @@ $products = [
     "produit_3" => [
         "Name" => "Avion_Standard ",
         "Model" => "S6542 Blanc",
-        "Price" => "100000",
-        "Discount" => "Discount 20%",
+        "Price" => "120000",
+        "Discount" => " 20",
         "Picture" => "Avion-standard_4.jpg",
     ],
 
@@ -77,48 +77,68 @@ $products = [
 
     </tr>
     <tr>
-        <td> <?php
+        <td> Name: <?php
             print_r($products['produit_1']['Name']); ?></td>
 
-        <td> <?php
+        <td> Name : <?php
             print_r($products['produit_2']['Name']); ?> </td>
-        <td>
-            <?php
-            print_r($products['produit_3']['Name']); ?> </td>
+        <td> Name :
+            <?php print_r($products['produit_3']['Name']); ?> </td>
 
     </tr>
     <tr>
-        <td> <?php
+        <td> Model : <?php
             print_r($products['produit_1']['Model']); ?></td>
 
-        <td> <?php
+        <td> Model :<?php
             print_r($products['produit_2']['Model']); ?> </td>
-        <td>
+        <td> Model :
             <?php
             print_r($products['produit_3']['Model']); ?> </td>
 
     </tr>
     <tr>
-        <td> <?php
+        <td> Price TTC : <?php
             formatPrice($products['produit_1']['Price']); ?> </td>
 
-        <td> <?php
+        <td> Price TTC :<?php
            formatPrice($products['produit_2']['Price']); ?> </td>
-        <td>
+        <td> Price TTC :
             <?php
             formatPrice($products['produit_3']['Price']); ?> </td>
     </tr>
     <tr>
-        <td> <?php
+        <td>Price TH : <?php
+            formatPrice(priceExludingVAT($products['produit_1']['Price'])); ?> </td>
+
+        <td>Price TH :<?php
+           formatPrice(priceExludingVAT($products['produit_2']['Price'])); ?> </td>
+        <td>Price TH :
+            <?php
+            formatPrice(priceExludingVAT($products['produit_3']['Price'])); ?> </td>
+    </tr>
+    <tr>
+    <tr>
+        <td>Discount : <?php
             print_r($products['produit_1']['Discount']); ?></td>
 
-        <td> <?php
+        <td> Discount :<?php
             print_r($products['produit_2']['Discount']);  ?> </td>
-        <td>
+        <td>Discount :
             <?php
             print_r($products['produit_3']['Discount']);  ?> </td>
 
     </tr>
+        <td> Discounted Price : <?php
+            formatPrice(displayDicountedPrice($products['produit_1']['Price'],$products['produit_1']['Discount'])); ?> </td>
+
+        <td> Discounted Price :<?php
+           formatPrice(displayDicountedPrice($products['produit_2']['Price'],$products['produit_1']['Discount'])); ?> </td>
+        <td>Discounted Price :
+            <?php
+            formatPrice(displayDicountedPrice($products['produit_3']['Price'],$products['produit_1']['Discount'])); ?> </td>
+    </tr>
+    
 </table>
 
 <h3> boucle Foreach </h3>
@@ -128,12 +148,12 @@ $products = [
 foreach ($products as $product => $caracteristiques){
 
                 echo ' Produit ' .($product ). ' :<br>';
-         foreach($caracteristiques as $caracteristique => $details ){
-
+         foreach($caracteristiques as $caracteristique => $details )
+         {
        echo $caracteristique. ' : ' .$details. '<br>';
-    
          }
-   
+         
+
        echo '<br><br>';
 
    
@@ -148,36 +168,21 @@ for($i=0; $i<count($products);$i++){
     echo "<img src=\"" . $products[$keys[$i]]["Picture"] . "\"alt=\"\" width=\"600\">";
     echo '<br><br>';
     echo $keys[$i]. "<br/>";?>
-     <li> <?php echo $products[$keys[$i]]["Name"] ."<br/>" ; ?></li>
-    <li> <?php  echo $products[$keys[$i]]["Model"] . "<br/>";?></li>
-   <li> <?php  formatPrice($products[$keys[$i]]["Price"]) . "<br/>";?></li>
-  <li> <?php   echo $products[$keys[$i]]["Discount"] . "<br/>";?></li>
+     <li> Name : <?php echo $products[$keys[$i]]["Name"] ."<br/>" ; ?></li>
+    <li>Model : <?php  echo $products[$keys[$i]]["Model"] . "<br/>";?></li>
+   <li>Price TTC : <?php  formatPrice($products[$keys[$i]]["Price"]) . "<br/>";?></li>
+   <li> Price TH : <?php formatPrice(priceExludingVAT($products[$keys[$i]]["Price"])). "<br/>" ;?></li>
+  <li> Discount : <?php   echo $products[$keys[$i]]["Discount"] . "<br/>";?></li>
+  <li>Price Discounted: <?php formatPrice(displayDicountedPrice($products[$keys[$i]]["Price"],$products[$keys[$i]]["Discount"]));?></li></ul>
+
 <?php
     echo '<br><br>';
 
 }
+
+
 ?>
 </ul>
-<h3> boucle while </h3>
-
-
-<ul><h5> boucle while  </h5>
-
-<?php
-$i=0;
-while($i < count($products))
-{
-
-    echo $keys[$i]. "<br/>";
-    foreach($products[$keys[$i]] as $key => $value){?>
-<li> <?php echo $key .":" . $value."<br/>";?> </li>
-   <?php } $i++;
-    echo '<br><br>';
-
-}
-?>
-</ul>
-
 
 
 <h5> boucle while  </h5>
@@ -190,12 +195,14 @@ while($index < count($products))
     echo "<img src=\"" . $products[$keys[$index]]["Picture"] . "\"alt=\"\" width=\"600\">";
     echo '<br><br>';
     echo $keys[$index]. "<br/>";
-
-    echo $products[$keys[$index]]["Name"] ."<br/>" ;
-    echo $products[$keys[$index]]["Model"] . "<br/>";
-    formatPrice($products[$keys[$index]]["Price"]) . "<br/>";
-    echo $products[$keys[$index]]["Discount"] . "<br/>";
-    $index++;
+?> <ul> 
+    <li>Name: <?php echo $products[$keys[$index]]["Name"]  ;?></li>
+    <li>Model: <?php echo $products[$keys[$index]]["Model"] ;?></li>
+    <li>Price TTC: <?php formatPrice($products[$keys[$index]]["Price"]) ;?></li>
+    <li>Price TH: <?php formatPrice(priceExludingVAT($products[$keys[$index]]["Price"]));?></li>
+  <li> Discount: <?php echo $products[$keys[$index]]["Discount"] ;?> %</li> 
+    <li>Price Discounted: <?php formatPrice(displayDicountedPrice($products[$keys[$index]]["Price"],$products[$keys[$index]]["Discount"]));?></li></ul>
+    <?php $index++;
     echo '<br><br>';
 
 } ?>
