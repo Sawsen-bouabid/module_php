@@ -1,0 +1,43 @@
+Index: database.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\r\n<?php\r\ntry\r\n{\r\n    $bdd = new PDO('mysql:host=localhost;port=3307;dbname=boutique_base;charset=utf8', 'sawsen', '$ousouta88');\r\n}\r\ncatch (Exception $e)\r\n{\r\n    die('Erreur : ' . $e->getMessage());\r\n}\r\n?>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/database.php b/database.php
+--- a/database.php	(revision edd93ad1f33fb7760a7ccac741c0220e815e7c6c)
++++ b/database.php	(date 1623140615056)
+@@ -8,4 +8,32 @@
+ {
+     die('Erreur : ' . $e->getMessage());
+ }
++
++
++// affichage produit :
++
++$query_1 = $bdd->query('SELECT `products`.`name`FROM `products`;
++');
++
++
++while ($donnees = $query_1->fetch())
++{
++    echo $donnees['name'] . '<br />';
++}
++
++$query_1->closeCursor();
++
++
++
++// Ajout d'une condition
++
++$query_2 = $bdd->query("SELECT `products`.`name`, `products`.`quantity`FROM `products`WHERE `products`.`quantity` = '0';");
++
++while ($donnees = $query_2->fetch())
++{
++echo $donnees['name'] . ' quantity is ' . $donnees['quantity'] . '<br>';
++}
++
++$query_2->closeCursor();
++
+ ?>
