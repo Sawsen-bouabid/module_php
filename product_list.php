@@ -1,39 +1,45 @@
+<?php
+include  'database.php'; ?>
+
+
+<h3> Liste produit</h3>
 
 <?php
-try
-{
-    $bdd = new PDO('mysql:host=localhost;port=3307;dbname=boutique_base;charset=utf8', 'sawsen', '$ousouta88');
-}
-catch (Exception $e)
-{
-    die('Erreur : ' . $e->getMessage());
-}
+ Foreach (Product_list () as $product){
 
+  echo $product['name'].'<br />';
+ }
+?>
 
-// affichage produit :
+<h3>  Liste des produits en rupture de stock </h3>
 
-$query_1 = $bdd->query('SELECT `products`.`name`FROM `products`;
-');
+<?php
+Foreach (ProductQuantityNULL () as $product){
 
-
-while ($donnees = $query_1->fetch())
-{
-    echo $donnees['name'] . '<br />';
+ echo $product['name'].' '. "quantity is ".$product['quantity'].'<br />';
 }
 
-$query_1->closeCursor();
+?>
 
 
+ <h3> Liste des produits (nom du produit, quantité et prix unitaire) de la commande portant l'id 1</h3>
 
-// Ajout d'une condition
+<?php
 
-$query_2 = $bdd->query("SELECT `products`.`name`, `products`.`quantity`FROM `products`WHERE `products`.`quantity` = '0';");
+Foreach (OrderID1 () as $order){
 
-while ($donnees = $query_2->fetch())
-{
-    echo $donnees['name'] . ' quantity is ' . $donnees['quantity'] . '<br>';
+ echo 'Name: '.$order['name'].'<br>'.'Price : '.$order['price'].'<br>'.'Quantity : ' .$order['quantity'].'<br>'.'<br>';
 }
 
-$query_2->closeCursor();
+?>
+
+<h3>Liste des commandes (Numéro + Prix total de la commande) du client “Charlize”</h3>
+
+<?php
+
+Foreach (order_list_by_custmors_name_charlize ()as $order){
+
+    echo 'Name: '.$order['number'].'<br>'.'TotalPrice : ' .$order['total_price'].'<br>'.'<br>';
+}
 
 ?>
