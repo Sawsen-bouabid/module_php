@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b2aa71b1-dec9-4c7d-8091-6259f4a8adc9" name="Default Changelist" comment="commit queries 1 et 2">
+    <list default="true" id="b2aa71b1-dec9-4c7d-8091-6259f4a8adc9" name="Default Changelist" comment="appel des fonctions avec le foreach">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/product_list.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +53,7 @@
       <workItem from="1621430966690" duration="151000" />
       <workItem from="1622186617640" duration="15255000" />
       <workItem from="1622445159730" duration="23549000" />
-      <workItem from="1623137034021" duration="4791000" />
+      <workItem from="1623137034021" duration="21220000" />
     </task>
     <task id="LOCAL-00001" summary="panier">
       <created>1622473115148</created>
@@ -88,7 +90,28 @@
       <option name="project" value="LOCAL" />
       <updated>1623140871262</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="commit">
+      <created>1623142608005</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1623142608005</updated>
+    </task>
+    <task id="LOCAL-00007" summary="ajout des fonctions">
+      <created>1623159121493</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1623159121493</updated>
+    </task>
+    <task id="LOCAL-00008" summary="appel des fonctions avec le foreach">
+      <created>1623159160757</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1623159160757</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,8 +132,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="panier" />
     <MESSAGE value="connection to database" />
-    <MESSAGE value="commit" />
     <MESSAGE value="commit queries 1 et 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit queries 1 et 2" />
+    <MESSAGE value="commit" />
+    <MESSAGE value="ajout des fonctions" />
+    <MESSAGE value="appel des fonctions avec le foreach" />
+    <option name="LAST_COMMIT_MESSAGE" value="appel des fonctions avec le foreach" />
   </component>
 </project>

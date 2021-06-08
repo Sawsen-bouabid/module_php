@@ -31,9 +31,9 @@ function queries($queryToExecute) {
 function ProductQuantityNULL ()
 {
 
-    $query_3 ="SELECT `products`.`name`, `products`.`quantity`FROM `products`WHERE `products`.`quantity` ='0'";
+    $query_2 ="SELECT `products`.`name`, `products`.`quantity`FROM `products`WHERE `products`.`quantity` ='0'";
 
-    return queries($query_3 );
+    return queries($query_2 );
 
 
 }
@@ -73,6 +73,42 @@ GROUP BY  orders.number ";
 
 
 
+function insert_new_product ($name, $description, $price, $weight, $picture, $quantity, $available, $categorie_id)
+{
+global $bdd;
+
+    $req = $bdd->prepare('INSERT INTO products (name, description, price, weight, picture, quantity, available, categorie_id)  
+VALUES(:name, :description, :price, :weight, :picture, :quantity,:available,:categorie_id)');
+    $req->execute(array(
+        'name' => $name,
+        'description' => $description,
+        'price' => $price,
+        'weight' => $weight,
+        'picture' => $picture,
+        'quantity' => $quantity,
+        'available' => $available,
+        'categorie_id' => $categorie_id
+
+    ));
+echo "le produit est ".$name.' '."est bien ajouté".'<br>';
+
+
+
+}
+
+
+function update_product ( $price, $quantity, $product_name)
+{
+    global $bdd;
+
+    $req = $bdd->prepare('UPDATE product SET price = :newprice, quantity = :newquantity WHERE name = :product_name ');
+    $req->execute(array(
+        'newprice' => $newprice,
+        'newquantity' => $newquantity,
+        'product_name' => $product_name
+
+    ));echo "le produit est ".$product_name.' '."est bien mise à jour".'<br>';
+}
 
 ?>
 

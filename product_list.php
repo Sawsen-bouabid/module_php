@@ -37,9 +37,32 @@ Foreach (OrderID1 () as $order){
 
 <?php
 
+echo 'Charlize order: '.'<br>'.'<br>';
 Foreach (order_list_by_custmors_name_charlize ()as $order){
 
-    echo 'Name: '.$order['number'].'<br>'.'TotalPrice : ' .$order['total_price'].'<br>'.'<br>';
+
+    echo 'Order number : '.$order['number'].'<br>'.'Total Price : ' .$order['total_price'].'<br>'.'<br>';
 }
 
 ?>
+
+    <h3>Insertion d'un produit</h3>
+
+<?php // insert_new_product ('Cerise blanc', '', 3000, 1200, '', 100, '', 3);
+
+Foreach (Product_list () as $product){
+
+    echo $product['name'].'<br />';
+
+
+}
+
+?>
+
+<h3>Mise à jour d'un produit</h3>
+
+
+<?php update_product (  Cerise,500,60);
+
+
+
