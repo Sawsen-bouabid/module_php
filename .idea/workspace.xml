@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b2aa71b1-dec9-4c7d-8091-6259f4a8adc9" name="Default Changelist" comment="connection to database">
+    <list default="true" id="b2aa71b1-dec9-4c7d-8091-6259f4a8adc9" name="Default Changelist" comment="commit queries 1 et 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/database.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +51,7 @@
       <workItem from="1621430966690" duration="151000" />
       <workItem from="1622186617640" duration="15255000" />
       <workItem from="1622445159730" duration="23549000" />
-      <workItem from="1623137034021" duration="3551000" />
+      <workItem from="1623137034021" duration="4791000" />
     </task>
     <task id="LOCAL-00001" summary="panier">
       <created>1622473115148</created>
@@ -68,7 +67,28 @@
       <option name="project" value="LOCAL" />
       <updated>1623139171863</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="commit">
+      <created>1623140767486</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1623140767486</updated>
+    </task>
+    <task id="LOCAL-00004" summary="commit">
+      <created>1623140840915</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1623140840915</updated>
+    </task>
+    <task id="LOCAL-00005" summary="commit queries 1 et 2">
+      <created>1623140871262</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1623140871262</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,6 +109,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="panier" />
     <MESSAGE value="connection to database" />
-    <option name="LAST_COMMIT_MESSAGE" value="connection to database" />
+    <MESSAGE value="commit" />
+    <MESSAGE value="commit queries 1 et 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit queries 1 et 2" />
   </component>
 </project>
