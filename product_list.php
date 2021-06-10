@@ -5,7 +5,7 @@ include  'database.php'; ?>
 <h3> Liste produit</h3>
 
 <?php
- Foreach (Product_list () as $product){
+ foreach (Product_list () as $product){
 
   echo $product['name'].'<br />';
  }
@@ -62,7 +62,7 @@ Foreach (Product_list () as $product){
 <h3>Mise à jour d'un produit</h3>
 
 
-<?php update_product (  Cerise,500,60);
+<?php update_product (  500,60, $product['name']);
 
 
 

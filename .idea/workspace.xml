@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b2aa71b1-dec9-4c7d-8091-6259f4a8adc9" name="Default Changelist" comment="appel des fonctions avec le foreach">
+    <list default="true" id="b2aa71b1-dec9-4c7d-8091-6259f4a8adc9" name="Default Changelist" comment="Commit insertion update">
+      <change afterPath="$PROJECT_DIR$/.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Add_product.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Affiche-catalogue.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Article.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Catalogue.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Clients.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ListeClients.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Product_id.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/database.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/product_list.php" afterDir="false" />
@@ -41,6 +50,11 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\MAMP\htdocs\module_php" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -53,7 +67,9 @@
       <workItem from="1621430966690" duration="151000" />
       <workItem from="1622186617640" duration="15255000" />
       <workItem from="1622445159730" duration="23549000" />
-      <workItem from="1623137034021" duration="21220000" />
+      <workItem from="1623137034021" duration="22190000" />
+      <workItem from="1623224062759" duration="94000" />
+      <workItem from="1623240397819" duration="29936000" />
     </task>
     <task id="LOCAL-00001" summary="panier">
       <created>1622473115148</created>
@@ -111,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623159160757</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Commit insertion update">
+      <created>1623164569322</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1623164569322</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +159,7 @@
     <MESSAGE value="commit" />
     <MESSAGE value="ajout des fonctions" />
     <MESSAGE value="appel des fonctions avec le foreach" />
-    <option name="LAST_COMMIT_MESSAGE" value="appel des fonctions avec le foreach" />
+    <MESSAGE value="Commit insertion update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit insertion update" />
   </component>
 </project>

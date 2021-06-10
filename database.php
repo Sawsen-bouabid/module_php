@@ -13,7 +13,13 @@ function queries($queryToExecute) {
 
 
 
+function Affiche_Produit () {
 
+    $query = "SELECT * FROM `products`";
+
+    return queries($query);
+
+}
 
     function Product_list ()
     {
@@ -24,8 +30,23 @@ function queries($queryToExecute) {
 
     }
 
+function list_categories ()
+{
 
+    $query_12 = "SELECT * FROM `categories`";
 
+    return queries($query_12);
+
+}
+
+function list_customers ()
+{
+
+    $query_clients = "SELECT `customers`.`first_name`, `customers`.`last_name` FROM `customers`";
+
+    return queries($query_clients);
+
+}
 
 
 function ProductQuantityNULL ()
@@ -97,11 +118,11 @@ echo "le produit est ".$name.' '."est bien ajouté".'<br>';
 }
 
 
-function update_product ( $price, $quantity, $product_name)
+function update_product ( $newprice, $newquantity, $product_name)
 {
     global $bdd;
 
-    $req = $bdd->prepare('UPDATE product SET price = :newprice, quantity = :newquantity WHERE name = :product_name ');
+    $req = $bdd->prepare('UPDATE products SET price = :newprice, quantity = :newquantity WHERE name = :product_name ');
     $req->execute(array(
         'newprice' => $newprice,
         'newquantity' => $newquantity,
