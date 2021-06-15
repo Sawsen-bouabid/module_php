@@ -1,34 +1,51 @@
 <?php
 
+
 require_once __DIR__.'\database.php';
 
 require_once __DIR__.'\Article.php';
+require_once __DIR__.'\LocalFruits.php';
+
+
+
 
 class Catalogue
 {
-    public array $articleArray= array();
+    public  $display_array= array();
 
 
 
     public function __construct() {
-       foreach (Affiche_Produit() as $product) {
+        foreach (Affiche_Produit() as $product) {
+            if($product["localOrigin"] != "" and $product["region"]!= ""){
 
-           $article = new Article( $product["name"],$product["description"],$product["price"],$product["weight"],$product["picture"],$product["quantity"],$product["available"],$product["categorie_id"] );
+                $Product_array = new LocalFruits ($product,$product["localOrigin"],$product["region"]);
+                array_push($this->display_array,$Product_array);
+            } else {
 
-          array_push($this->articleArray,$article);
+                $Product_array = new Article($product);
+                array_push($this->display_array,$Product_array);
 
-       }
+            }
 
+        }
     }
 
-
-
-    public function displayAllArticle()
+    public function displayAll()
     {
-        foreach ( $this->articleArray as  $Catalogue) {
+        foreach ( $this->display_array as  $product) {
 
-            $Catalogue->displayArticle() ;
+            //  L'opérateur instanceof permet de vérifier si tel objet est une instance de telle classe
+            if($product instanceof LocalFruits){
+                $product->displayFruit();
+            } else {
+                $product->displayArticle();
+            }
+
+        }
     }
-    }
+
+
 
 }
+

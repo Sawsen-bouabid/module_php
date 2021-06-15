@@ -1,7 +1,7 @@
 
 <?php
 
-    $bdd= new PDO('mysql:host=localhost;port=3307;dbname=boutique_base;charset=utf8', 'sawsen', '$ousouta88');
+$bdd= new PDO('mysql:host=localhost;port=3307;dbname=boutique_base;charset=utf8', 'sawsen', '$ousouta88');
 
 function queries($queryToExecute) {
     global $bdd;
@@ -21,14 +21,14 @@ function Affiche_Produit () {
 
 }
 
-    function Product_list ()
-    {
+function Product_list ()
+{
 
-        $query_1 = "SELECT `products`.`name`FROM `products`";
+    $query_1 = "SELECT `products`.`name`FROM `products`";
 
-        return queries($query_1);
+    return queries($query_1);
 
-    }
+}
 
 function list_categories ()
 {
@@ -42,7 +42,7 @@ function list_categories ()
 function list_customers ()
 {
 
-    $query_clients = "SELECT `customers`.`first_name`, `customers`.`last_name` FROM `customers`";
+    $query_clients = "SELECT`customers`.`id`,`customers`.`first_name`, `customers`.`last_name` FROM `customers`";
 
     return queries($query_clients);
 
@@ -96,7 +96,7 @@ GROUP BY  orders.number ";
 
 function insert_new_product ($name, $description, $price, $weight, $picture, $quantity, $available, $categorie_id)
 {
-global $bdd;
+    global $bdd;
 
     $req = $bdd->prepare('INSERT INTO products (name, description, price, weight, picture, quantity, available, categorie_id)  
 VALUES(:name, :description, :price, :weight, :picture, :quantity,:available,:categorie_id)');
@@ -111,7 +111,7 @@ VALUES(:name, :description, :price, :weight, :picture, :quantity,:available,:cat
         'categorie_id' => $categorie_id
 
     ));
-echo "le produit est ".$name.' '."est bien ajouté".'<br>';
+    echo "le produit est ".$name.' '."est bien ajouté".'<br>';
 
 
 

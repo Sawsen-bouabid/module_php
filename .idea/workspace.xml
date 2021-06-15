@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b2aa71b1-dec9-4c7d-8091-6259f4a8adc9" name="Default Changelist" comment="Commit insertion update">
-      <change afterPath="$PROJECT_DIR$/.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Add_product.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Affiche-catalogue.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Article.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Catalogue.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Client.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Clients.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ListeClients.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Product_id.php" afterDir="false" />
+    <list default="true" id="b2aa71b1-dec9-4c7d-8091-6259f4a8adc9" name="Default Changelist" comment="POO">
+      <change afterPath="$PROJECT_DIR$/LocalFruits.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Panier.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Affiche-catalogue.php" beforeDir="false" afterPath="$PROJECT_DIR$/Affiche-catalogue.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/Article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Catalogue.php" beforeDir="false" afterPath="$PROJECT_DIR$/Catalogue.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/product_list.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +38,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../module_phpBDD" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -69,7 +64,7 @@
       <workItem from="1622445159730" duration="23549000" />
       <workItem from="1623137034021" duration="22190000" />
       <workItem from="1623224062759" duration="94000" />
-      <workItem from="1623240397819" duration="29936000" />
+      <workItem from="1623240397819" duration="31185000" />
     </task>
     <task id="LOCAL-00001" summary="panier">
       <created>1622473115148</created>
@@ -134,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623164569322</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="POO">
+      <created>1623336816385</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1623336816385</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,6 +162,7 @@
     <MESSAGE value="ajout des fonctions" />
     <MESSAGE value="appel des fonctions avec le foreach" />
     <MESSAGE value="Commit insertion update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit insertion update" />
+    <MESSAGE value="POO" />
+    <option name="LAST_COMMIT_MESSAGE" value="POO" />
   </component>
 </project>

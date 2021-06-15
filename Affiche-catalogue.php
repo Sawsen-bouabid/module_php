@@ -2,15 +2,27 @@
 
 <?php
 require_once __DIR__.'\database.php';
+require_once __DIR__.'\Catalogue.php';
+require_once __DIR__.'\Article.php';
+require_once __DIR__.'\LocalFruits.php';
 
-require_once "Catalogue.php";
-require_once "Article.php";
+require_once __DIR__.'\Panier.php';
 
-$Banane= new Article('Cerise blanc', 'sweet bananas', 3000, 1200, 'https://static.passeportsante.net/200x200/i101971-banane-nu.jpg', 100, '', 3);
 
-$Banane->displayArticle();
 
 $Catalogue=new Catalogue();
 
-$Catalogue->displayAllArticle();
+$Catalogue->displayAll();
+
+//$Affiche_panier = new Panier ();
+
+//$Affiche_panier->displayPanier ();
+
+
+//$Affiche_panier->Update (54,5);
+
+//$Affiche_panier->displayPanier ();
+
+
+
 
