@@ -6,13 +6,11 @@ require_once __DIR__ . '\Article.php';
 
 class Panier
 {
-    private  $pan = array();
+    private $pan = array();
 
     public function __construct()
     {
-
         foreach (Affiche_Produit() as $product) {
-
 
             $this->pan[$product["id"]] = $product["quantity"];
         }
@@ -31,7 +29,9 @@ class Panier
             $this->pan[$id] = 1 + $oldquantiy;
         } else {
             array_push($id, 1);
+
         }
+        echo "Add quantity =1 to  product with id :" . $id . '<br>';
     }
 
     public function Update($id, $quantity)
@@ -43,8 +43,5 @@ class Panier
         echo "the new quantity is" . $this->pan[$id] . " of the product  id :" . $id . '<br>';
     }
 
-    public function displayPanier()
-    {
-        var_dump($this->pan);
-    }
+
 }

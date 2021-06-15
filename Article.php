@@ -2,7 +2,7 @@
 
 
 class Article
-{
+{   public  $id;
     protected $name;
     public  $description;
     public  $price;
@@ -15,7 +15,7 @@ class Article
 
     public function __construct($product)
     {
-
+        $this->id = $product["id"];
         $this->name = $product["name"];
         $this->description = $product["description"];
         $this->price = $product["price"];
@@ -37,7 +37,7 @@ class Article
                 echo "Prix :" . $this->price . '<br>';
                 echo "Weight :" . $this->weight . '<br>';
                 echo "<img src=\"" . $this->picture . "\"alt=\"\" width=\"300\">" . '<br>';
-                echo "Quantity :" . $this->quantity . '<br>';
+                echo "Quantité disponible :" . $this->quantity . '<br>';
                 echo "Available :" . $this->available . '<br>';
                 echo "Categorie_id :" . $this->categorie_id . '<br>';
                 echo '<br>' . '<br>'; ?>

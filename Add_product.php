@@ -46,7 +46,7 @@ include __DIR__.'\database.php'; ?>
                     </select>
 
 
-       <button type="submit" class="btn btn-primary" id="button" name="envoyer" >Ajouter Produit</button>
+       <input type="submit" class="btn btn-primary"  name="envoyer" >Ajouter Produit</input>
 
 
 </form>

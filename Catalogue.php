@@ -42,6 +42,20 @@ class Catalogue
                 $product->displayArticle();
             }
 
+?>
+            <form method="post" action="Affiche_panier.php">
+
+
+                <h5>Choisir Quantité :</h5>
+                <input  name="quantity" value="quantity" type="number" min="0"><br>
+                <input  name="id" value="<?php echo $product->id ?>" type="hidden" ><br>
+
+
+                <input type="submit" class="btn btn-primary" value="Ajouter au Panier" > </input>
+
+
+</form>
+<?php
         }
     }
 
